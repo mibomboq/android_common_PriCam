@@ -9,30 +9,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaibc_tuning",
-    owner: "prize",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6789/libaibc_tuning.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libBSTBeautyAPK",
     owner: "prize",
     strip: {
@@ -915,7 +891,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.2",
+    name: "vendor.mediatek.hardware.pq@2.2_system_ext",
+    stem: "vendor.mediatek.hardware.pq@2.2",
     owner: "prize",
     strip: {
         none: true,
@@ -945,7 +922,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.3",
+    name: "vendor.mediatek.hardware.pq@2.3_system_ext",
+    stem: "vendor.mediatek.hardware.pq@2.3",
     owner: "prize",
     strip: {
         none: true,

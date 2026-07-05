@@ -1553,10 +1553,12 @@ PRODUCT_COPY_FILES += \
     vendor/prize/camera/proprietary/system_ext/etc/bst_stick.cfg:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bst_stick.cfg \
     vendor/prize/camera/proprietary/system_ext/etc/bstai_aidoc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bstai_aidoc \
     vendor/prize/camera/proprietary/system_ext/etc/bstaicorner_aidoc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bstaicorner_aidoc \
-    vendor/prize/camera/proprietary/system_ext/etc/singleaidoc.cfg:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/singleaidoc.cfg
+    vendor/prize/camera/proprietary/system_ext/etc/singleaidoc.cfg:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/singleaidoc.cfg \
+    vendor/prize/camera/proprietary/vendor/etc/user_front.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/user_front.cfg \
+    vendor/prize/camera/proprietary/vendor/etc/user_main.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/user_main.cfg \
+    vendor/prize/camera/proprietary/vendor/etc/user_wide.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/user_wide.cfg
 
 PRODUCT_PACKAGES += \
-    libaibc_tuning \
     libBSTBeautyAPK \
     libBSTFaceDetction \
     libBSTSingleAIBokeh_system_ext \
@@ -1588,8 +1590,8 @@ PRODUCT_PACKAGES += \
     libtensorflowlite24 \
     vendor.mediatek.hardware.pq@2.0_system_ext \
     vendor.mediatek.hardware.pq@2.1_system_ext \
-    vendor.mediatek.hardware.pq@2.2 \
-    vendor.mediatek.hardware.pq@2.3 \
+    vendor.mediatek.hardware.pq@2.2_system_ext \
+    vendor.mediatek.hardware.pq@2.3_system_ext \
     vendor.mediatek.hardware.pq_aidl-V2-ndk \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0_system_ext \
