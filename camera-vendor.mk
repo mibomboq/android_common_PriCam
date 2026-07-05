@@ -1564,35 +1564,16 @@ PRODUCT_PACKAGES += \
     libBSTSingleAIBokeh_system_ext \
     libBSTSingleAIDoc \
     libBstStick2D \
-    libJpegOal \
-    libMiraVision_jni \
-    libPQDCjni \
-    libPQjni \
     libUvPanorama \
     libc++_shared \
-    libcustom_jni \
-    libcustom_prop \
-    libdisp_dejitter \
     libjniBstAiDoc \
     libjniBstSticker \
     libjni_bstbeauty \
     libjni_bstfilter \
     libjni_bstportrait \
-    libjni_pq \
     libjni_uvpanorama \
-    libjpeg-alpha-oal \
-    libjpeg-alpha \
     libloadfilter \
-    libmtk_vt_service \
-    libmtk_vt_wrapper \
     libopencv_java4 \
     libtensorflowlite_system_ext \
     libtensorflowlite24 \
-    vendor.mediatek.hardware.pq@2.0_system_ext \
-    vendor.mediatek.hardware.pq@2.1_system_ext \
-    vendor.mediatek.hardware.pq@2.2_system_ext \
-    vendor.mediatek.hardware.pq@2.3_system_ext \
-    vendor.mediatek.hardware.pq_aidl-V2-ndk \
-    vendor.mediatek.hardware.videotelephony-V1-ndk \
-    vendor.mediatek.hardware.videotelephony@1.0_system_ext \
     PriCamera
