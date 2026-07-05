@@ -1566,6 +1566,7 @@ PRODUCT_PACKAGES += \
     libMiraVision_jni \
     libPQDCjni \
     libPQjni \
+    libUvPanorama \
     libc++_shared \
     libcustom_jni \
     libcustom_prop \
