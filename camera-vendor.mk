@@ -1576,4 +1576,9 @@ PRODUCT_PACKAGES += \
     libopencv_java4 \
     libtensorflowlite_system_ext \
     libtensorflowlite24 \
+    vendor.mediatek.hardware.pq@2.0_system_ext \
+    vendor.mediatek.hardware.pq@2.1_system_ext \
+    vendor.mediatek.hardware.pq@2.2_system_ext \
+    vendor.mediatek.hardware.pq@2.3_system_ext \
+    vendor.mediatek.hardware.pq_aidl-V2-ndk \
     PriCamera
