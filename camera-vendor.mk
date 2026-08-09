@@ -1554,18 +1554,23 @@ PRODUCT_COPY_FILES += \
     vendor/prize/camera/proprietary/system_ext/etc/bstai_aidoc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bstai_aidoc \
     vendor/prize/camera/proprietary/system_ext/etc/bstaicorner_aidoc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bstaicorner_aidoc \
     vendor/prize/camera/proprietary/system_ext/etc/singleaidoc.cfg:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/singleaidoc.cfg \
+    vendor/prize/camera/proprietary/vendor/etc/hdr.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hdr.cfg \
     vendor/prize/camera/proprietary/vendor/etc/user_front.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/user_front.cfg \
     vendor/prize/camera/proprietary/vendor/etc/user_main.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/user_main.cfg \
     vendor/prize/camera/proprietary/vendor/etc/user_wide.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/user_wide.cfg
 
 PRODUCT_PACKAGES += \
+    s5k2lqsx_mipi_raw_IdxMgr \
+    s5k4h7_mipi_raw_IdxMgr \
     libBSTBeautyAPK \
     libBSTFaceDetction \
     libBSTSingleAIBokeh_system_ext \
     libBSTSingleAIDoc \
     libBstStick2D \
+    libMiraVision_jni \
     libUvPanorama \
     libc++_shared \
+    libcomposer_ext_system_ext \
     libjniBstAiDoc \
     libjniBstSticker \
     libjni_bstbeauty \
@@ -1576,6 +1581,8 @@ PRODUCT_PACKAGES += \
     libopencv_java4 \
     libtensorflowlite_system_ext \
     libtensorflowlite24 \
+    vendor.mediatek.hardware.composer_ext-V1-ndk \
+    vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.pq@2.0_system_ext \
     vendor.mediatek.hardware.pq@2.1_system_ext \
     vendor.mediatek.hardware.pq@2.2_system_ext \
