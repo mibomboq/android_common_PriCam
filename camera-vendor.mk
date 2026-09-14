@@ -1553,6 +1553,7 @@ PRODUCT_COPY_FILES += \
     vendor/prize/camera/proprietary/system_ext/etc/bst_stick.cfg:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bst_stick.cfg \
     vendor/prize/camera/proprietary/system_ext/etc/bstai_aidoc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bstai_aidoc \
     vendor/prize/camera/proprietary/system_ext/etc/bstaicorner_aidoc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bstaicorner_aidoc \
+    vendor/prize/camera/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/prize/camera/proprietary/system_ext/etc/singleaidoc.cfg:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/singleaidoc.cfg \
     vendor/prize/camera/proprietary/vendor/etc/hdr.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hdr.cfg \
     vendor/prize/camera/proprietary/vendor/etc/user_front.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/user_front.cfg \
@@ -1593,4 +1594,5 @@ PRODUCT_PACKAGES += \
     libvt_avsync \
     vendor.mediatek.hardware.videotelephony-V1-ndk_system_ext \
     vendor.mediatek.hardware.videotelephony@1.0_system_ext \
-    PriCamera
+    PriCamera \
+    vtservice

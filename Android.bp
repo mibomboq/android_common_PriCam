@@ -1004,3 +1004,32 @@ android_app_import {
     privileged: true,
     system_ext_specific: true,
 }
+
+cc_prebuilt_binary {
+    name: "vtservice",
+    owner: "prize",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/vtservice",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libmtk_vt_service",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
