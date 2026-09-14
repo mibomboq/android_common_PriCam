@@ -10,58 +10,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "s5k2lqsx_mipi_raw_IdxMgr",
-    owner: "prize",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/s5k2lqsx_mipi_raw_IdxMgr.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "s5k4h7_mipi_raw_IdxMgr",
-    owner: "prize",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/s5k4h7_mipi_raw_IdxMgr.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libBSTBeautyAPK",
     owner: "prize",
     strip: {
@@ -197,37 +145,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libMiraVision_jni",
-    owner: "prize",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libMiraVision_jni.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libhidlbase",
-                "vendor.mediatek.hardware.pq@2.3_system_ext",
-                "vendor.mediatek.hardware.pq_aidl-V2-ndk",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libUvPanorama",
     owner: "prize",
     strip: {
@@ -265,39 +182,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcomposer_ext_system_ext",
-    stem: "libcomposer_ext",
-    owner: "prize",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libcomposer_ext.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "libcutils",
-                "vendor.mediatek.hardware.composer_ext@1.0",
-                "vendor.mediatek.hardware.composer_ext-V1-ndk",
-                "libbinder_ndk",
-                "libbinder",
-                "libc++",
-                "libc",
-                "libm",
                 "libdl",
             ],
         },
@@ -572,213 +456,10 @@ cc_prebuilt_library_shared {
     system_ext_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.composer_ext-V1-ndk",
-    owner: "prize",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.composer_ext@1.0",
-    owner: "prize",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.composer_ext@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.0_system_ext",
-    stem: "vendor.mediatek.hardware.pq@2.0",
-    owner: "prize",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.1_system_ext",
-    stem: "vendor.mediatek.hardware.pq@2.1",
-    owner: "prize",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.1.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.pq@2.0_system_ext",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.2_system_ext",
-    stem: "vendor.mediatek.hardware.pq@2.2",
-    owner: "prize",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.2.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.pq@2.0_system_ext",
-                "vendor.mediatek.hardware.pq@2.1_system_ext",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq@2.3_system_ext",
-    stem: "vendor.mediatek.hardware.pq@2.3",
-    owner: "prize",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq@2.3.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.pq@2.0_system_ext",
-                "vendor.mediatek.hardware.pq@2.1_system_ext",
-                "vendor.mediatek.hardware.pq@2.2_system_ext",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.pq_aidl-V2-ndk",
-    owner: "prize",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.graphics.common-V4-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
 android_app_import {
     name: "PriCamera",
     owner: "prize",
-    apk: "proprietary/system_ext/app/PriCamera/PriCamera.apk",
+    apk: "proprietary/system_ext/priv-app/PriCamera/PriCamera.apk",
     overrides: [
         "Aperture",
     ],
@@ -786,5 +467,6 @@ android_app_import {
     dex_preopt: {
         enabled: false,
     },
+    privileged: true,
     system_ext_specific: true,
 }
