@@ -1567,6 +1567,11 @@ PRODUCT_PACKAGES += \
     libBstStick2D \
     libUvPanorama \
     libc++_shared \
+    libcomutils \
+    libimsma \
+    libimsma_adapt \
+    libimsma_rtp \
+    libimsma_socketwrapper \
     libjniBstAiDoc \
     libjniBstSticker \
     libjni_bstbeauty \
@@ -1574,7 +1579,18 @@ PRODUCT_PACKAGES += \
     libjni_bstportrait \
     libjni_uvpanorama \
     libloadfilter \
+    libmtk_vt_service \
+    libmtk_vt_wrapper \
     libopencv_java4 \
+    libpowerstatshaldataprovider \
+    libsignal \
+    libsink-mtk \
+    libsource \
     libtensorflowlite_system_ext \
     libtensorflowlite24 \
+    libvcodec_cap \
+    libvcodec_capenc \
+    libvt_avsync \
+    vendor.mediatek.hardware.videotelephony-V1-ndk_system_ext \
+    vendor.mediatek.hardware.videotelephony@1.0_system_ext \
     PriCamera
